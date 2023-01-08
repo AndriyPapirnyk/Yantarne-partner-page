@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+.friendsPage{
+    width: 100%;
+    height: 100vh;
+    padding: 85px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    
+    .friendsPage__textHolder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            font-size: calc(32px + 16 * (100vw / 1512));
+            font-weight: 700;
+            span{
+                color: #FF344D;
+                font-family: 'Comfortaa', cursive;
+                font-weight: 700;
+            }
+        }
+        h2{
+            font-size: calc(16px + 16 * (100vw / 1512));
+            margin-top: 50px;
+            font-weight: 600;
+        }
+    }
+}
+
+// swiper js
+
+.swiper-container {
+    height: auto;
+    box-shadow: 0px 0px 9px 1px rgba(163, 163, 163, 0.42);
+    .swiper-wrapper {
+        -webkit-transition-timing-function:linear!important; 
+        -o-transition-timing-function:linear!important;
+        transition-timing-function:linear!important; 
+        .swiper-slide {
+          aspect-ratio : 1 / 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          font-size: 20px;
+          font-weight: bold;
+          @media screen and (max-width: 1000px) {
+            height: 330px;
+          }
+          @media screen and (max-width: 500px) {
+            height: 280px;
+          }
+          @media screen and (max-width: 400px) {
+            height: 250px;
+          }
+          img{
+            width: 68%;
+          }
+        }
+        .swiper-slide__item2-5{
+          background-color:#fff;
+        }
+        .swiper-slide__item3-6{
+          background-color: rgb(68, 40, 22);
+        }
+        .swiper-slide__item1-4{
+        background-color: rgb(12, 12, 12);
+      }
+    }
+}
+
+
+
+
+
+// media
+
+// @media screen and (max-width: 1000px) {
+//     .swiper-slide {
+//         height: 330px;
+//     }
+// }
+// @media screen and (max-width: 500px) {
+//     .swiper-slide {
+//         height: 280px;
+//     }
+// }
+// @media screen and (max-width: 400px) {
+//     .swiper-slide {
+//         height: 250px;
+//     }
+// }
+@media  (max-height: 730px) {
+    .friendsPage{
+        padding: 67.5px 0;
+    }
+}
+
